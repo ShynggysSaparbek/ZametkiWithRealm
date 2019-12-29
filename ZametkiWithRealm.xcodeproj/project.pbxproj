@@ -3,17 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		95C3CCE323B5418500C32401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CCE223B5418500C32401 /* AppDelegate.swift */; };
 		95C3CCE523B5418500C32401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CCE423B5418500C32401 /* SceneDelegate.swift */; };
-		95C3CCE723B5418500C32401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CCE623B5418500C32401 /* ViewController.swift */; };
 		95C3CCEA23B5418500C32401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C3CCE823B5418500C32401 /* Main.storyboard */; };
 		95C3CCEC23B5418800C32401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C3CCEB23B5418800C32401 /* Assets.xcassets */; };
 		95C3CCEF23B5418800C32401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C3CCED23B5418800C32401 /* LaunchScreen.storyboard */; };
 		95C3CCFA23B5418800C32401 /* ZametkiWithRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CCF923B5418800C32401 /* ZametkiWithRealmTests.swift */; };
+		95C3CD0823B5422100C32401 /* NoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD0523B5422100C32401 /* NoteData.swift */; };
+		95C3CD0923B5422100C32401 /* NoteRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD0623B5422100C32401 /* NoteRepresentation.swift */; };
+		95C3CD0A23B5422100C32401 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD0723B5422100C32401 /* NoteViewModel.swift */; };
+		95C3CD1B23B5422700C32401 /* NoteListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD0C23B5422700C32401 /* NoteListConfigurator.swift */; };
+		95C3CD1C23B5422700C32401 /* NoteListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD0E23B5422700C32401 /* NoteListPresenter.swift */; };
+		95C3CD1D23B5422700C32401 /* NoteListDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD0F23B5422700C32401 /* NoteListDependencies.swift */; };
+		95C3CD1E23B5422700C32401 /* NoteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD1023B5422700C32401 /* NoteListRouter.swift */; };
+		95C3CD2523B5422700C32401 /* NoteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD1923B5422700C32401 /* NoteListInteractor.swift */; };
+		95C3CD2623B5422700C32401 /* NoteListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD1A23B5422700C32401 /* NoteListWireFrame.swift */; };
+		95C3CD3123B5423400C32401 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD2823B5423400C32401 /* NoteService.swift */; };
+		95C3CD3223B5423400C32401 /* NoteByRealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD2A23B5423400C32401 /* NoteByRealmError.swift */; };
+		95C3CD3323B5423400C32401 /* NotesByRealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD2B23B5423400C32401 /* NotesByRealmService.swift */; };
+		95C3CD3423B5423400C32401 /* NoteViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD2D23B5423400C32401 /* NoteViewFactory.swift */; };
+		95C3CD3523B5423400C32401 /* NoteFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD2E23B5423400C32401 /* NoteFactory.swift */; };
+		95C3CD3623B5423400C32401 /* NoteDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD2F23B5423400C32401 /* NoteDataFactory.swift */; };
+		95C3CD3723B5423400C32401 /* NoteDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD3023B5423400C32401 /* NoteDataObject.swift */; };
+		95C3CD3923B5465D00C32401 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD3823B5465D00C32401 /* NoteListView.swift */; };
+		95C3CD3B23B5488100C32401 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD3A23B5488100C32401 /* AddNoteView.swift */; };
+		95C3CD3D23B548A000C32401 /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD3C23B548A000C32401 /* EditNoteView.swift */; };
+		95C3CD4023B757CC00C32401 /* NoteListStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD3F23B757CC00C32401 /* NoteListStateProtocol.swift */; };
+		95C3CD4223B758B100C32401 /* ListSortedFromOldest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD4123B758B100C32401 /* ListSortedFromOldest.swift */; };
+		95C3CD4423B758E100C32401 /* ListOfSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD4323B758E100C32401 /* ListOfSearchResults.swift */; };
+		95C3CD4623B7590900C32401 /* ListSortedFromNewest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD4523B7590900C32401 /* ListSortedFromNewest.swift */; };
+		95C3CD4823B77D5800C32401 /* ListAllNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3CD4723B77D5800C32401 /* ListAllNotes.swift */; };
+		E0032831ACA1E0C87D13E8E9 /* Pods_ZametkiWithRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA330AC3EDAF7977D096ACE /* Pods_ZametkiWithRealm.framework */; };
+		F6FD98558FB52DBDDEE05E21 /* Pods_ZametkiWithRealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D21924EE5CA331B62A36F9 /* Pods_ZametkiWithRealmTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		156F270D865046651888746F /* Pods-ZametkiWithRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZametkiWithRealm.release.xcconfig"; path = "Target Support Files/Pods-ZametkiWithRealm/Pods-ZametkiWithRealm.release.xcconfig"; sourceTree = "<group>"; };
+		24C662B9892A6A3078532AB8 /* Pods-ZametkiWithRealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZametkiWithRealmTests.debug.xcconfig"; path = "Target Support Files/Pods-ZametkiWithRealmTests/Pods-ZametkiWithRealmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58EA5587818E7693C159C39F /* Pods-ZametkiWithRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZametkiWithRealm.debug.xcconfig"; path = "Target Support Files/Pods-ZametkiWithRealm/Pods-ZametkiWithRealm.debug.xcconfig"; sourceTree = "<group>"; };
 		95C3CCDF23B5418500C32401 /* ZametkiWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZametkiWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C3CCE223B5418500C32401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C3CCE423B5418500C32401 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95C3CCE623B5418500C32401 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95C3CCE923B5418500C32401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95C3CCEB23B5418800C32401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C3CCEE23B5418800C32401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +65,33 @@
 		95C3CCF523B5418800C32401 /* ZametkiWithRealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZametkiWithRealmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C3CCF923B5418800C32401 /* ZametkiWithRealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZametkiWithRealmTests.swift; sourceTree = "<group>"; };
 		95C3CCFB23B5418800C32401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C3CD0523B5422100C32401 /* NoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteData.swift; sourceTree = "<group>"; };
+		95C3CD0623B5422100C32401 /* NoteRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteRepresentation.swift; sourceTree = "<group>"; };
+		95C3CD0723B5422100C32401 /* NoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		95C3CD0C23B5422700C32401 /* NoteListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListConfigurator.swift; sourceTree = "<group>"; };
+		95C3CD0E23B5422700C32401 /* NoteListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListPresenter.swift; sourceTree = "<group>"; };
+		95C3CD0F23B5422700C32401 /* NoteListDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListDependencies.swift; sourceTree = "<group>"; };
+		95C3CD1023B5422700C32401 /* NoteListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListRouter.swift; sourceTree = "<group>"; };
+		95C3CD1923B5422700C32401 /* NoteListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListInteractor.swift; sourceTree = "<group>"; };
+		95C3CD1A23B5422700C32401 /* NoteListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListWireFrame.swift; sourceTree = "<group>"; };
+		95C3CD2823B5423400C32401 /* NoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
+		95C3CD2A23B5423400C32401 /* NoteByRealmError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteByRealmError.swift; sourceTree = "<group>"; };
+		95C3CD2B23B5423400C32401 /* NotesByRealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesByRealmService.swift; sourceTree = "<group>"; };
+		95C3CD2D23B5423400C32401 /* NoteViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewFactory.swift; sourceTree = "<group>"; };
+		95C3CD2E23B5423400C32401 /* NoteFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteFactory.swift; sourceTree = "<group>"; };
+		95C3CD2F23B5423400C32401 /* NoteDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDataFactory.swift; sourceTree = "<group>"; };
+		95C3CD3023B5423400C32401 /* NoteDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDataObject.swift; sourceTree = "<group>"; };
+		95C3CD3823B5465D00C32401 /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		95C3CD3A23B5488100C32401 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		95C3CD3C23B548A000C32401 /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
+		95C3CD3F23B757CC00C32401 /* NoteListStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListStateProtocol.swift; sourceTree = "<group>"; };
+		95C3CD4123B758B100C32401 /* ListSortedFromOldest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSortedFromOldest.swift; sourceTree = "<group>"; };
+		95C3CD4323B758E100C32401 /* ListOfSearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfSearchResults.swift; sourceTree = "<group>"; };
+		95C3CD4523B7590900C32401 /* ListSortedFromNewest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSortedFromNewest.swift; sourceTree = "<group>"; };
+		95C3CD4723B77D5800C32401 /* ListAllNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllNotes.swift; sourceTree = "<group>"; };
+		96D21924EE5CA331B62A36F9 /* Pods_ZametkiWithRealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZametkiWithRealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA330AC3EDAF7977D096ACE /* Pods_ZametkiWithRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZametkiWithRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B6D1608A131E696548EF3 /* Pods-ZametkiWithRealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZametkiWithRealmTests.release.xcconfig"; path = "Target Support Files/Pods-ZametkiWithRealmTests/Pods-ZametkiWithRealmTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0032831ACA1E0C87D13E8E9 /* Pods_ZametkiWithRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +107,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FD98558FB52DBDDEE05E21 /* Pods_ZametkiWithRealmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FC5FBA166556CDC420957DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58EA5587818E7693C159C39F /* Pods-ZametkiWithRealm.debug.xcconfig */,
+				156F270D865046651888746F /* Pods-ZametkiWithRealm.release.xcconfig */,
+				24C662B9892A6A3078532AB8 /* Pods-ZametkiWithRealmTests.debug.xcconfig */,
+				F56B6D1608A131E696548EF3 /* Pods-ZametkiWithRealmTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95C3CCD623B5418400C32401 = {
 			isa = PBXGroup;
 			children = (
 				95C3CCE123B5418500C32401 /* ZametkiWithRealm */,
 				95C3CCF823B5418800C32401 /* ZametkiWithRealmTests */,
 				95C3CCE023B5418500C32401 /* Products */,
+				5FC5FBA166556CDC420957DC /* Pods */,
+				B2D3E4F0F4539FE68BBBA300 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +150,9 @@
 			children = (
 				95C3CCE223B5418500C32401 /* AppDelegate.swift */,
 				95C3CCE423B5418500C32401 /* SceneDelegate.swift */,
-				95C3CCE623B5418500C32401 /* ViewController.swift */,
+				95C3CD0423B5422100C32401 /* Models */,
+				95C3CD2723B5423400C32401 /* Sevices */,
+				95C3CD0B23B5422700C32401 /* NoteList */,
 				95C3CCE823B5418500C32401 /* Main.storyboard */,
 				95C3CCEB23B5418800C32401 /* Assets.xcassets */,
 				95C3CCED23B5418800C32401 /* LaunchScreen.storyboard */,
@@ -99,6 +170,108 @@
 			path = ZametkiWithRealmTests;
 			sourceTree = "<group>";
 		};
+		95C3CD0423B5422100C32401 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD0623B5422100C32401 /* NoteRepresentation.swift */,
+				95C3CD0523B5422100C32401 /* NoteData.swift */,
+				95C3CD0723B5422100C32401 /* NoteViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95C3CD0B23B5422700C32401 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD0C23B5422700C32401 /* NoteListConfigurator.swift */,
+				95C3CD0D23B5422700C32401 /* VIPER */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		95C3CD0D23B5422700C32401 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD1123B5422700C32401 /* NoteViews */,
+				95C3CD1923B5422700C32401 /* NoteListInteractor.swift */,
+				95C3CD0E23B5422700C32401 /* NoteListPresenter.swift */,
+				95C3CD1723B5422700C32401 /* NoteListEntity */,
+				95C3CD0F23B5422700C32401 /* NoteListDependencies.swift */,
+				95C3CD1A23B5422700C32401 /* NoteListWireFrame.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		95C3CD1123B5422700C32401 /* NoteViews */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD3823B5465D00C32401 /* NoteListView.swift */,
+				95C3CD3A23B5488100C32401 /* AddNoteView.swift */,
+				95C3CD3C23B548A000C32401 /* EditNoteView.swift */,
+				95C3CD3E23B757B400C32401 /* ListState */,
+			);
+			path = NoteViews;
+			sourceTree = "<group>";
+		};
+		95C3CD1723B5422700C32401 /* NoteListEntity */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD1023B5422700C32401 /* NoteListRouter.swift */,
+			);
+			path = NoteListEntity;
+			sourceTree = "<group>";
+		};
+		95C3CD2723B5423400C32401 /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD2823B5423400C32401 /* NoteService.swift */,
+				95C3CD2923B5423400C32401 /* RealmServices */,
+			);
+			path = Sevices;
+			sourceTree = "<group>";
+		};
+		95C3CD2923B5423400C32401 /* RealmServices */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD2B23B5423400C32401 /* NotesByRealmService.swift */,
+				95C3CD2A23B5423400C32401 /* NoteByRealmError.swift */,
+				95C3CD2C23B5423400C32401 /* NoteFactory */,
+				95C3CD3023B5423400C32401 /* NoteDataObject.swift */,
+			);
+			path = RealmServices;
+			sourceTree = "<group>";
+		};
+		95C3CD2C23B5423400C32401 /* NoteFactory */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD2E23B5423400C32401 /* NoteFactory.swift */,
+				95C3CD2D23B5423400C32401 /* NoteViewFactory.swift */,
+				95C3CD2F23B5423400C32401 /* NoteDataFactory.swift */,
+			);
+			path = NoteFactory;
+			sourceTree = "<group>";
+		};
+		95C3CD3E23B757B400C32401 /* ListState */ = {
+			isa = PBXGroup;
+			children = (
+				95C3CD3F23B757CC00C32401 /* NoteListStateProtocol.swift */,
+				95C3CD4523B7590900C32401 /* ListSortedFromNewest.swift */,
+				95C3CD4123B758B100C32401 /* ListSortedFromOldest.swift */,
+				95C3CD4323B758E100C32401 /* ListOfSearchResults.swift */,
+				95C3CD4723B77D5800C32401 /* ListAllNotes.swift */,
+			);
+			path = ListState;
+			sourceTree = "<group>";
+		};
+		B2D3E4F0F4539FE68BBBA300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEA330AC3EDAF7977D096ACE /* Pods_ZametkiWithRealm.framework */,
+				96D21924EE5CA331B62A36F9 /* Pods_ZametkiWithRealmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C3CCFE23B5418800C32401 /* Build configuration list for PBXNativeTarget "ZametkiWithRealm" */;
 			buildPhases = (
+				63B2FB2ECEE3EED933A786BC /* [CP] Check Pods Manifest.lock */,
 				95C3CCDB23B5418500C32401 /* Sources */,
 				95C3CCDC23B5418500C32401 /* Frameworks */,
 				95C3CCDD23B5418500C32401 /* Resources */,
+				077BE02B76DDE522864580EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C3CD0123B5418800C32401 /* Build configuration list for PBXNativeTarget "ZametkiWithRealmTests" */;
 			buildPhases = (
+				E34F048C70E7F42C0546C58A /* [CP] Check Pods Manifest.lock */,
 				95C3CCF123B5418800C32401 /* Sources */,
 				95C3CCF223B5418800C32401 /* Frameworks */,
 				95C3CCF323B5418800C32401 /* Resources */,
@@ -195,14 +371,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		077BE02B76DDE522864580EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZametkiWithRealm/Pods-ZametkiWithRealm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZametkiWithRealm/Pods-ZametkiWithRealm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZametkiWithRealm/Pods-ZametkiWithRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B2FB2ECEE3EED933A786BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZametkiWithRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E34F048C70E7F42C0546C58A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZametkiWithRealmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95C3CCDB23B5418500C32401 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C3CCE723B5418500C32401 /* ViewController.swift in Sources */,
+				95C3CD3223B5423400C32401 /* NoteByRealmError.swift in Sources */,
+				95C3CD0923B5422100C32401 /* NoteRepresentation.swift in Sources */,
+				95C3CD4623B7590900C32401 /* ListSortedFromNewest.swift in Sources */,
+				95C3CD3423B5423400C32401 /* NoteViewFactory.swift in Sources */,
+				95C3CD4023B757CC00C32401 /* NoteListStateProtocol.swift in Sources */,
+				95C3CD3723B5423400C32401 /* NoteDataObject.swift in Sources */,
+				95C3CD1B23B5422700C32401 /* NoteListConfigurator.swift in Sources */,
+				95C3CD3623B5423400C32401 /* NoteDataFactory.swift in Sources */,
+				95C3CD3323B5423400C32401 /* NotesByRealmService.swift in Sources */,
+				95C3CD4823B77D5800C32401 /* ListAllNotes.swift in Sources */,
+				95C3CD2523B5422700C32401 /* NoteListInteractor.swift in Sources */,
+				95C3CD3123B5423400C32401 /* NoteService.swift in Sources */,
+				95C3CD0A23B5422100C32401 /* NoteViewModel.swift in Sources */,
+				95C3CD3523B5423400C32401 /* NoteFactory.swift in Sources */,
+				95C3CD1C23B5422700C32401 /* NoteListPresenter.swift in Sources */,
+				95C3CD4423B758E100C32401 /* ListOfSearchResults.swift in Sources */,
+				95C3CD0823B5422100C32401 /* NoteData.swift in Sources */,
+				95C3CD3D23B548A000C32401 /* EditNoteView.swift in Sources */,
+				95C3CD1E23B5422700C32401 /* NoteListRouter.swift in Sources */,
+				95C3CD3B23B5488100C32401 /* AddNoteView.swift in Sources */,
 				95C3CCE323B5418500C32401 /* AppDelegate.swift in Sources */,
 				95C3CCE523B5418500C32401 /* SceneDelegate.swift in Sources */,
+				95C3CD4223B758B100C32401 /* ListSortedFromOldest.swift in Sources */,
+				95C3CD2623B5422700C32401 /* NoteListWireFrame.swift in Sources */,
+				95C3CD1D23B5422700C32401 /* NoteListDependencies.swift in Sources */,
+				95C3CD3923B5465D00C32401 /* NoteListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +623,7 @@
 		};
 		95C3CCFF23B5418800C32401 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58EA5587818E7693C159C39F /* Pods-ZametkiWithRealm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +642,7 @@
 		};
 		95C3CD0023B5418800C32401 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156F270D865046651888746F /* Pods-ZametkiWithRealm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +661,7 @@
 		};
 		95C3CD0223B5418800C32401 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C662B9892A6A3078532AB8 /* Pods-ZametkiWithRealmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +684,7 @@
 		};
 		95C3CD0323B5418800C32401 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56B6D1608A131E696548EF3 /* Pods-ZametkiWithRealmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
